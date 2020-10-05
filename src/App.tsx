@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LeftSideBar from './components/LeftSideBar/LeftSideBar';
 import SuspiciousClaimsPage from './pages/SuspiciousClaimsPage/SuspiciousClaimsPage';
 import { Layout } from 'antd';
+import FactCheckPage from './pages/FactCheckPage/FactCheckPage';
 
 const { Content } = Layout;
 function App() {
@@ -18,8 +19,11 @@ function App() {
           <LeftSideBar />
           <Content>
             <Switch>
-              <Route path="/">
+              <Route exact path="/">
                 <SuspiciousClaimsPage />
+              </Route>
+              <Route path="/Fact-Check">
+                <FactCheckPage />
               </Route>
             </Switch>
           </Content>

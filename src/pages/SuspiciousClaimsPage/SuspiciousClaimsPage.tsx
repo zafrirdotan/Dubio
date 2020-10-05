@@ -6,7 +6,12 @@ import './SuspiciousClaimsPage.scss';
 export default function SuspiciousClaimsPage() {
   return (
     <div className="page-container">
-      <PageHeader />
+      <PageHeader
+        bannerName="banner"
+        leftImageName="streams-icon"
+        pageTitle="Suspicious Claims"
+        subTitle="See which suspicious claims are trending online!"
+      />
       <SuspiciousClaimsFilter />
       <SuspiciousClaimsList />
     </div>

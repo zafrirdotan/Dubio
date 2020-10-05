@@ -3,6 +3,7 @@ import DubioCard from '../DubioCard/DubioCard';
 import { PlusOutlined } from '@ant-design/icons';
 
 import './ClaimSummary.scss';
+import Claim from './Claim';
 export default function ClaimSummary() {
   return (
     <div className="claim-summary-container">
@@ -11,11 +12,13 @@ export default function ClaimSummary() {
         title="Claim summary"
         extra={
           <a href="#">
-            <PlusOutlined />
+            <PlusOutlined style={{ color: 'white', fontSize: '1.1rem' }} />
           </a>
         }
       >
-        <div className="claim-summary-contact">bubu;jb;b</div>
+        <div className="claim-summary-contact">
+          <Claim text="bubuu" numberOfLikes={1} />
+        </div>
       </DubioCard>
     </div>
   );

@@ -13,7 +13,7 @@ const { Sider } = Layout;
 
 export default function LeftSideBar() {
   return (
-    <Sider width={200} className="side-menu" collapsed={true}>
+    <Sider className="side-menu" collapsed={true}>
       <Menu
         mode="inline"
         defaultSelectedKeys={['1']}

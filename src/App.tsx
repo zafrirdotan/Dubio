@@ -19,10 +19,10 @@ function App() {
           <LeftSideBar />
           <Content>
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/Dubio">
                 <SuspiciousClaimsPage />
               </Route>
-              <Route path="/Fact-Check">
+              <Route path="/Dubio/Fact-Check">
                 <FactCheckPage />
               </Route>
             </Switch>

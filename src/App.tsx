@@ -22,7 +22,7 @@ function App() {
               <Route exact path="/Dubio">
                 <SuspiciousClaimsPage />
               </Route>
-              <Route path="/Dubio/Fact-Check">
+              <Route exact ypath="/Dubio/Fact-Check">
                 <FactCheckPage />
               </Route>
             </Switch>

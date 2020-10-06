@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80b0032f05f9c20d222910e7581950dd",
+    "revision": "769068413ed8b77862e1ec5d3457324a",
     "url": "/Dubio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Dubio/static/css/2.220ccb42.chunk.css"
   },
   {
-    "revision": "483c7861345ec1acbec2",
+    "revision": "26ce6ba984b4aa53bf4a",
     "url": "/Dubio/static/css/main.95aa3635.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Dubio/static/js/2.f3c1a89a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "483c7861345ec1acbec2",
-    "url": "/Dubio/static/js/main.801dae57.chunk.js"
+    "revision": "26ce6ba984b4aa53bf4a",
+    "url": "/Dubio/static/js/main.730d00b8.chunk.js"
   },
   {
     "revision": "b5f2152a94be277d191d",

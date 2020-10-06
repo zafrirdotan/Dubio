@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Dubio/precache-manifest.6f0872d060f69c74dc031528874ebcc3.js"
+  "/Dubio/precache-manifest.af9ff91598364f05ee9834c9b61ebfb8.js"
 );
 
 self.addEventListener('message', (event) => {

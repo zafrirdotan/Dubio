@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a700c2216a44709aeffceb34252b5e69",
+    "revision": "9dda8d721816f60fc47db070918a9990",
     "url": "/Dubio/index.html"
   },
   {
-    "revision": "792ed6897e97573ad759",
+    "revision": "fd262bfad693720dfa51",
     "url": "/Dubio/static/css/2.220ccb42.chunk.css"
   },
   {
-    "revision": "f5b43433261864238a87",
+    "revision": "37f78f23c7750d7b1342",
     "url": "/Dubio/static/css/main.95aa3635.chunk.css"
   },
   {
-    "revision": "792ed6897e97573ad759",
-    "url": "/Dubio/static/js/2.f3c1a89a.chunk.js"
+    "revision": "fd262bfad693720dfa51",
+    "url": "/Dubio/static/js/2.dc5dccdc.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Dubio/static/js/2.f3c1a89a.chunk.js.LICENSE.txt"
+    "url": "/Dubio/static/js/2.dc5dccdc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f5b43433261864238a87",
-    "url": "/Dubio/static/js/main.638f6213.chunk.js"
+    "revision": "37f78f23c7750d7b1342",
+    "url": "/Dubio/static/js/main.ca57f8a2.chunk.js"
   },
   {
     "revision": "b5f2152a94be277d191d",

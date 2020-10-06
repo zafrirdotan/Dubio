@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/dubio/static/css/main.95aa3635.chunk.css",
+    "main.js": "/dubio/static/js/main.d99c314c.chunk.js",
+    "main.js.map": "/dubio/static/js/main.d99c314c.chunk.js.map",
+    "runtime-main.js": "/dubio/static/js/runtime-main.9814a069.js",
+    "runtime-main.js.map": "/dubio/static/js/runtime-main.9814a069.js.map",
+    "static/css/2.220ccb42.chunk.css": "/dubio/static/css/2.220ccb42.chunk.css",
+    "static/js/2.97fd23de.chunk.js": "/dubio/static/js/2.97fd23de.chunk.js",
+    "static/js/2.97fd23de.chunk.js.map": "/dubio/static/js/2.97fd23de.chunk.js.map",
+    "index.html": "/dubio/index.html",
+    "precache-manifest.cb631c866accc9ba8ee0cead20e4b95c.js": "/dubio/precache-manifest.cb631c866accc9ba8ee0cead20e4b95c.js",
+    "service-worker.js": "/dubio/service-worker.js",
+    "static/css/2.220ccb42.chunk.css.map": "/dubio/static/css/2.220ccb42.chunk.css.map",
+    "static/css/main.95aa3635.chunk.css.map": "/dubio/static/css/main.95aa3635.chunk.css.map",
+    "static/js/2.97fd23de.chunk.js.LICENSE.txt": "/dubio/static/js/2.97fd23de.chunk.js.LICENSE.txt",
+    "static/media/banner.png": "/dubio/static/media/banner.2aa2e633.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9814a069.js",
+    "static/css/2.220ccb42.chunk.css",
+    "static/js/2.97fd23de.chunk.js",
+    "static/css/main.95aa3635.chunk.css",
+    "static/js/main.d99c314c.chunk.js"
+  ]
+}

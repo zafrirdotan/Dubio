@@ -4,22 +4,20 @@ import { PlusOutlined } from '@ant-design/icons';
 
 import './ClaimSummary.scss';
 import Claim from './Claim';
+import { Button } from 'antd';
+import DubioFormCard from '../DubioFormCard/DubioFormCard';
 export default function ClaimSummary() {
   return (
-    <div className="claim-summary-container">
-      <DubioCard
-        type="inner"
-        title="Claim summary"
-        extra={
-          <a href="#">
-            <PlusOutlined style={{ color: 'white', fontSize: '1.1rem' }} />
-          </a>
-        }
-      >
-        <div className="claim-summary-contact">
-          <Claim text="bubuu" numberOfLikes={1} />
-        </div>
-      </DubioCard>
-    </div>
+    <DubioFormCard
+      title="Claim summary"
+      rightHeaderIcon={
+        <PlusOutlined style={{ color: 'white', fontSize: '1.1rem' }} />
+      }
+      submitButtonText="Add new"
+    >
+      <div className="claim-summary-contact">
+        <Claim text="bubuu" numberOfLikes={1} />
+      </div>
+    </DubioFormCard>
   );
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import ClaimSummary from '../../components/ClaimSummary/ClaimSummary';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import SuspiciousClaim from '../SuspiciousClaimsPage/SuspiciousClaimsList/SuspiciousClaim';
+import ClaimDetailsForm from './ClaimDetailsForm/ClaimDetailsForm';
+import RelevantSourcesList from './RelevantSourcesList/RelevantSourcesList';
 
 export default function FactCheckPage() {
   return (
@@ -14,6 +16,10 @@ export default function FactCheckPage() {
       />
       <SuspiciousClaim />
       <ClaimSummary />
+
+      <ClaimDetailsForm />
+
+      <RelevantSourcesList />
     </div>
   );
 }

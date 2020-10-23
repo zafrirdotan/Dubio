@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PageHeader from '../../components/PageHeader/PageHeader';
+import { getDemoData } from '../../services/axiosService';
 import SuspiciousClaimsFilter from './SuspiciousClaimsFilter';
 import SuspiciousClaimsList from './SuspiciousClaimsList/SuspiciousClaimsList';
 import './SuspiciousClaimsPage.scss';
 export default function SuspiciousClaimsPage() {
+  useEffect(() => {
+    getDemoData();
+  }, []);
+
   return (
     <div className="page-container">
       <PageHeader

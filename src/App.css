@@ -5,3 +5,15 @@
   overflow-y: scroll;
   padding: 20px;
 }
+
+@media screen and (min-width: 1800px) {
+  .page-container {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .page-container {
+    width: 95%;
+  }
+}

@@ -3,7 +3,7 @@ import { articleList } from "../../pages/MockData/articleList";
 
 const articleSlice = createSlice({
   name: "article",
-  initialState: { articles: articleList },
+  initialState: { articlesArr: articleList },
   reducers: {
     toggleHotCount: (state, action) => {
       if (!action.payload) return;
@@ -34,8 +34,8 @@ const articleSlice = createSlice({
   },
 });
 
-const findArticle = (state, action) =>
-  state.articles.find((el) => el.ArticleId === action.payload);
+const findArticle = (state:any, action:any) =>
+  state.articlesArr.find((el:any) => el.ArticleId === action.payload);
 
 export const { toggleHotCount, toggleBookmarkCount } = articleSlice.actions;
 

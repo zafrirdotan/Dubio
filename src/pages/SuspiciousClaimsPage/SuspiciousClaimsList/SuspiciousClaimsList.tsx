@@ -17,7 +17,7 @@ function SuspiciousClaimsList(props: any) {
 }
 
 const mapStateToProps = (state: any) => ({
-  articlesArr: state.articleSlice.articles,
+  articlesArr: state.articles.articlesArr,
 });
 
 export default connect(mapStateToProps)(SuspiciousClaimsList);

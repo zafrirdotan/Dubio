@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Input } from 'antd';
 import './LoginPage.scss';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
-import { login } from '../../services/UserApi';
+import { useDispatch, useSelector } from 'react-redux';
+import { isLoggedSelector, loginThunk } from '../../redux/Slices/UserSlice';
 
 export default function LoginPage() {
   let history = useHistory();
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+  const dispatch = useDispatch();
+  const isLogged = useSelector(isLoggedSelector);
+  useEffect(() => {
+    console.log('isLogged:', isLogged);
+
+    if (isLogged) {
+      history.push('/');
+    }
+  }, [isLogged]);
 
   const handleLogin = () => {
-    login('admin', 'system');
-    history.push('/');
+    dispatch(loginThunk(name, password));
   };
 
   return (
@@ -19,13 +30,22 @@ export default function LoginPage() {
         <header className="login-page-header">
           <img src={require('../../images/dubioLogo.png')} />
         </header>
-        <Input size="large" placeholder="User Name" className="login-input" />
+        <Input
+          size="large"
+          placeholder="User Name"
+          className="login-input"
+          value={name}
+          onChange={(ev) => setName(ev.target.value)}
+        />
         <Input.Password
           className="login-input"
           placeholder="input password"
           iconRender={(visible) =>
             visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
           }
+          value={password}
+          onChange={(ev) => setPassword(ev.target.value)}
+          autoComplete="off"
         />
 
         <Button onClick={handleLogin} type="primary" block size="large">

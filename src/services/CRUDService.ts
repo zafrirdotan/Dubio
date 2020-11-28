@@ -1,0 +1,20 @@
+import { httpService } from './httpService';
+
+export const httpGet = (url: string, Request: any) => {
+  httpService('post', url, Request);
+};
+
+export const httpPut = (url: string, Request: any) => {
+  httpService('put', url, Request);
+};
+export const httpPost = (
+  url: string,
+  Request: any,
+  includeToken: boolean = true
+) => {
+  httpService('post', url, Request, includeToken);
+};
+
+export const httpDelete = (url: string, Request: any) => {
+  httpService('delete', url, Request);
+};

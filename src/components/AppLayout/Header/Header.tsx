@@ -9,13 +9,14 @@ export default function AppHeader() {
   return (
     <Header
       className="app-header"
-      style={{ backgroundColor: '#615dfa', paddingLeft: '40px' }}
+      style={{ backgroundColor: '#615dfa', paddingLeft: '10px' }}
     >
-      <div className="app-title">Dubio</div>
+      <div className="app-title">
+        <img src={require('../../../images/dubioLogo.png')} />
+      </div>
 
       <Menu
         mode="horizontal"
-        defaultSelectedKeys={['1']}
         className="header-menu"
         style={{ backgroundColor: 'transparent' }}
         theme="dark"

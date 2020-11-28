@@ -1,10 +1,11 @@
 import { Card } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DubioCard from '../../../components/DubioCard/DubioCard';
 import TrendingCounter from '../../../components/TrendingCounter/TrendingCounter';
 import ClaimComment from './ClaimComment';
 const { Meta } = Card;
-export default function SuspiciousClaim() {
+export default function SuspiciousClaim({ articleTitle, article }: any) {
   return (
     <div className="claim-container">
       <DubioCard>
@@ -12,7 +13,13 @@ export default function SuspiciousClaim() {
           <Meta
             avatar={<div className="img-box"></div>}
             title="Article / Video Title "
-            description="This is the description"
+            description={
+              <div>
+                <Link to="/Fact-Check" className="link">
+                  {article.Title}
+                </Link>
+              </div>
+            }
           />
           <Meta title="Source " description="This is the description" />
           <TrendingCounter

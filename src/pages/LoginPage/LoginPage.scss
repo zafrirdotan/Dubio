@@ -1,0 +1,21 @@
+.login-page {
+  padding-top: 10rem;
+  .login-container {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #138e99;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    .login-input {
+      margin-bottom: 30px;
+    }
+    .login-page-header {
+      margin: 10px auto 70px;
+      img {
+        width: 200px;
+      }
+    }
+  }
+}

@@ -4,7 +4,6 @@ import { PlusOutlined } from '@ant-design/icons';
 
 import './ClaimSummary.scss';
 import Claim from './Claim';
-import { Button } from 'antd';
 import DubioFormCard from '../DubioFormCard/DubioFormCard';
 export default function ClaimSummary() {
   return (

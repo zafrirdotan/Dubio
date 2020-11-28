@@ -1,23 +1,18 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import AppHeader from './components/Header/Header';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
-import LeftSideBar from './components/LeftSideBar/LeftSideBar';
 import SuspiciousClaimsPage from './pages/SuspiciousClaimsPage/SuspiciousClaimsPage';
-import { Layout } from 'antd';
 import FactCheckPage from './pages/FactCheckPage/FactCheckPage';
+import LoginPage from './pages/LoginPage/LoginPage';
+import AppLayout from './components/AppLayout/AppLayout';
 
-const { Content } = Layout;
 function App() {
   return (
-    // <div className="App">
     <Router basename="/">
-      <Layout>
-        <AppHeader />
-        <Layout>
-          <LeftSideBar />
-          <Content>
+      <Switch>
+        <Route path="/">
+          <AppLayout>
             <Switch>
               <Route exact path="/">
                 <SuspiciousClaimsPage />
@@ -25,12 +20,14 @@ function App() {
               <Route exact path="/Fact-Check">
                 <FactCheckPage />
               </Route>
+              <Route exact path="/login">
+                <LoginPage />
+              </Route>
             </Switch>
-          </Content>
-        </Layout>
-      </Layout>
+          </AppLayout>
+        </Route>
+      </Switch>
     </Router>
-    // </div>
   );
 }
 

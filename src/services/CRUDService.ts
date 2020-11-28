@@ -1,7 +1,11 @@
 import { httpService } from './httpService';
 
-export const httpGet = (url: string, Request: any) => {
-  httpService('post', url, Request);
+export const httpGet = async (
+  url: string,
+  Request: any,
+  includeToken: boolean = true
+) => {
+  return await httpService('post', url, Request, includeToken);
 };
 
 export const httpPut = (url: string, Request: any) => {

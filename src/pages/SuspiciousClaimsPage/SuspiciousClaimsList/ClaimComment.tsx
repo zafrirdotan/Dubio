@@ -20,6 +20,7 @@ export default function ClaimComment() {
           isBookOn={true}
           bookCount={10}
           fireCount={16}
+          id={""}
         />
       </div>
     </DubioCard>

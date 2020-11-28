@@ -1,9 +1,9 @@
-import { Card } from 'antd';
-import React from 'react';
-import { Link } from 'react-router-dom';
-import DubioCard from '../../../components/DubioCard/DubioCard';
-import TrendingCounter from '../../../components/TrendingCounter/TrendingCounter';
-import ClaimComment from './ClaimComment';
+import { Card } from "antd";
+import React from "react";
+import { Link } from "react-router-dom";
+import DubioCard from "../../../components/DubioCard/DubioCard";
+import TrendingCounter from "../../../components/TrendingCounter/TrendingCounter";
+import ClaimComment from "./ClaimComment";
 const { Meta } = Card;
 export default function SuspiciousClaim({ articleTitle, article }: any) {
   return (
@@ -25,8 +25,9 @@ export default function SuspiciousClaim({ articleTitle, article }: any) {
           <TrendingCounter
             isFireOn={false}
             isBookOn={false}
-            bookCount={10}
-            fireCount={16}
+            bookCount={article.BookmarkCount}
+            fireCount={article.HotCount}
+            id={article.ArticleId}
           />
         </div>
       </DubioCard>

@@ -1,27 +1,37 @@
-import React from 'react';
+import React from "react";
+
 import {
   FireOutlined,
   BookOutlined,
   FireFilled,
   BookFilled,
-} from '@ant-design/icons';
-import './TrendingCounter.scss';
+} from "@ant-design/icons";
+
+import "./TrendingCounter.scss";
+
+//REDUX
+import { useDispatch } from "react-redux";
+import { toggleHotCount, toggleBookmarkCount } from "../../app/Slices/ArticleSlice";
 
 interface ITrendingCounter {
   isFireOn: boolean;
   fireCount: number;
   isBookOn: boolean;
   bookCount: number;
+  id: string;
 }
-export default function TrendingCounter({
+function TrendingCounter({
   isFireOn,
   fireCount,
   isBookOn,
   bookCount,
+  id,
 }: ITrendingCounter) {
+  const dispatch = useDispatch();
+
   return (
     <div className="trending-count-container">
-      <div>
+      <div onClick={() => dispatch(toggleHotCount(id))}>
         {isFireOn ? (
           <FireFilled className="trend-icon icon-filled" />
         ) : (
@@ -30,7 +40,7 @@ export default function TrendingCounter({
 
         <div className="trend-count">{fireCount}</div>
       </div>
-      <div>
+      <div onClick={() => dispatch(toggleBookmarkCount(id))}>
         {isBookOn ? (
           <BookFilled className="trend-icon icon-filled" />
         ) : (
@@ -42,3 +52,5 @@ export default function TrendingCounter({
     </div>
   );
 }
+
+export default (TrendingCounter);

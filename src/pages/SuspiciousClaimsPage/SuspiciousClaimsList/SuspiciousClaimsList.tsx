@@ -17,7 +17,7 @@ function SuspiciousClaimsList(props: any) {
   );
 }
 
-const mapStateToProps = (state: any) => ({
+const mapStateToProps = (state: any) => ({ //Change to selector
   articlesArr: state.articles.articlesArr,
 });
 

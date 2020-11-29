@@ -50,4 +50,4 @@ export const loginThunk = (name: string, password: string): AppThunk => async (
   } catch (err) {}
 };
 
-export const isLoggedSelector = (state: RootState) => state.user.userData;
+export const isLoggedSelector = (state: RootState) => state.user.userData; //COPY THIS SELECTOR

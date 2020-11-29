@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 
 function SuspiciousClaimsList(props: any) {
   let articles = (props.articlesArr);
+  
   return (
     <div className="claim-list">
       {articles.map((article: any) => {

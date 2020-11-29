@@ -1,11 +1,13 @@
-import { Card } from "antd";
 import React from "react";
+import { Card } from "antd";
 import { Link } from "react-router-dom";
 import DubioCard from "../../../components/DubioCard/DubioCard";
 import TrendingCounter from "../../../components/TrendingCounter/TrendingCounter";
 import ClaimComment from "./ClaimComment";
 const { Meta } = Card;
+
 export default function SuspiciousClaim({ articleTitle, article }: any) {
+  
   return (
     <div className="claim-container">
       <DubioCard>

@@ -1,13 +1,11 @@
 import React from "react";
-import { articleList } from "../../MockData/articleList";
-import SuspiciousClaim from "./SuspiciousClaim";
+import { useSelector } from "react-redux";
+import { articlesArrSelector } from "../../../redux/Slices/ArticleSlice";
+import SuspiciousClaim from "../../../components/suspicious-claim/suspicious-claim";
 import "./SuspiciousClaimsList.scss";
 
-import { connect } from "react-redux";
-
 function SuspiciousClaimsList(props: any) {
-  let articles = (props.articlesArr);
-  
+  const articles = useSelector(articlesArrSelector);
   return (
     <div className="claim-list">
       {articles.map((article: any) => {
@@ -17,8 +15,4 @@ function SuspiciousClaimsList(props: any) {
   );
 }
 
-const mapStateToProps = (state: any) => ({ //Change to selector
-  articlesArr: state.articles.articlesArr,
-});
-
-export default connect(mapStateToProps)(SuspiciousClaimsList);
+export default SuspiciousClaimsList;

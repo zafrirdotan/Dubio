@@ -1,0 +1,15 @@
+.claim-summary-item {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    .voting-button {
+      text-align: center;
+    }
+    .claim-text {
+      width: 100%;
+      margin: 15px;
+      padding: 5px 15px;
+      border: 2px solid gray;
+      border-radius: 12px;
+    }
+  }

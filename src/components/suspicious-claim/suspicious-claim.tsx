@@ -1,13 +1,16 @@
 import React from "react";
-import { Card } from "antd";
 import { Link } from "react-router-dom";
-import DubioCard from "../../../components/DubioCard/DubioCard";
-import TrendingCounter from "../../../components/TrendingCounter/TrendingCounter";
-import ClaimComment from "./ClaimComment";
+
+//STYLES
+import './suspicious-claim.scss';
+import { Card } from "antd";
+
+import DubioCard from "../DubioCard/DubioCard";
+import TrendingCounter from "../TrendingCounter/TrendingCounter";
+import ClaimComment from "../suspicious-claim-comment/suspicious-claim-comment";
 const { Meta } = Card;
 
 export default function SuspiciousClaim({ articleTitle, article }: any) {
-  
   return (
     <div className="claim-container">
       <DubioCard>
@@ -33,9 +36,8 @@ export default function SuspiciousClaim({ articleTitle, article }: any) {
           />
         </div>
       </DubioCard>
-      <div className="comment-container">
-        <ClaimComment />
-      </div>
+
+      <ClaimComment />
     </div>
   );
 }

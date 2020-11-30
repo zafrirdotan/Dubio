@@ -3,6 +3,7 @@ import { articleList } from "../../pages/MockData/articleList";
 
 import { getArticlesAsync, /*getClaimsAsync*/ } from '../../services/APIServices/ArticlesApi';
 import { AppThunk } from '../store';
+import {RootState} from '../rootReducer';
 
 interface IArticlesInitialState {
   articlesArr: any;
@@ -106,5 +107,7 @@ export const getArticles = (): AppThunk => async (dispatch) => {
 
   }catch (error){ dispatch(getClaimsFailure(error))}
 }*/
+
+export const articlesArrSelector = (state: RootState) => state.articles.articlesArr;
 
 export default articleSlice.reducer;

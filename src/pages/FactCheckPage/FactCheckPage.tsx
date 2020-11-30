@@ -1,9 +1,9 @@
 import React from 'react';
-import ClaimSummary from '../../components/ClaimSummary/ClaimSummary';
+import ClaimSummary from '../../components/claim-summary/claim-summary';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import { articleList } from '../MockData/articleList';
-import SuspiciousClaim from '../SuspiciousClaimsPage/SuspiciousClaimsList/SuspiciousClaim';
-import ClaimDetailsForm from './ClaimDetailsForm/ClaimDetailsForm';
+import SuspiciousClaim from '../../components/suspicious-claim/suspicious-claim';
+import ClaimDetailsForm from './claim-details-container/claim-details-container';
 import RelevantSourcesList from './RelevantSourcesList/RelevantSourcesList';
 
 export default function FactCheckPage() {
@@ -15,12 +15,12 @@ export default function FactCheckPage() {
         pageTitle="Fact-Check Claim"
         subTitle="Submit your assessment of this claim"
       />
+
       <SuspiciousClaim article={articleList[0]} />
       <ClaimSummary />
-
       <ClaimDetailsForm />
-
       <RelevantSourcesList />
+      
     </div>
   );
 }

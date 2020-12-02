@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./claim-details-container.scss";
 
-import DubioFormCard from "../../../components/DubioFormCard/DubioFormCard";
+import DubioFormCard from "../DubioFormCard/DubioFormCard";
 import ClaimDetails from "./claim-details/claim-details";
 
 export default function ClaimDetailsContainer() {

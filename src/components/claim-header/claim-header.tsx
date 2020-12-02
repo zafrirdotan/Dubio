@@ -1,5 +1,5 @@
 import React from "react";
-import "./claim-details-header.scss";
+import "./claim-header.scss";
 
 import {
   CaretUpFilled,
@@ -7,28 +7,30 @@ import {
   LinkOutlined,
 } from "@ant-design/icons";
 
-const claims_datesMadeArr: any = ["12 February 2020", "20 June 2020"];
+interface IClaimHeader {
+  title: string;
+  dates: string[];
+  rate: number;
+}
 
-const ClaimDetailsHeader = () => {
+export default function ClaimHeader(props: IClaimHeader) {
   return (
     <div className="claim-form-header">
       <div className="claim-form-header-counter">
         <CaretUpFilled />
-        <p>2</p>
+        <p>{props.rate}</p>
         <CaretDownFilled />
       </div>
       <div className="claim-maker">
-        <b>Donald Trump</b>
+        <b>{props.title}</b>
       </div>
       <div className="claim-dates-made-container">
-        {claims_datesMadeArr.map((el: any) => (
-          <div className="claim-date-made">
+        {props.dates.map((el: any, i: number) => (
+          <div key={i} className="claim-date-made">
             <LinkOutlined /> <span>{el}</span>
           </div>
         ))}
       </div>
     </div>
   );
-};
-
-export default ClaimDetailsHeader;
+}

@@ -1,11 +1,12 @@
 .claim-form-header {
-  display: flex;
-
+  display: inline-flex;
+  
   div {
-    padding: 0 15px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
   }
   .claim-form-header-counter {
     p {
@@ -17,12 +18,13 @@
   .claim-dates-made-container {
     flex-direction: row;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 10px;
 
     .claim-date-made {
       flex-direction: row;
+      align-items: center;
       span {
-        padding: 5px;
+        padding-right: 5px;
       }
     }
   }

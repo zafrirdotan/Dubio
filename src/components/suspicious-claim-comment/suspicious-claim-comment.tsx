@@ -1,7 +1,7 @@
 import React from "react";
 import "./suspicious-claim-comment.scss";
-import DubioCard from "../../components/DubioCard/DubioCard";
-import TrendingCounter from "../../components/TrendingCounter/TrendingCounter";
+import DubioCard from "../DubioCard/DubioCard";
+import TrendingCounter from "../TrendingCounter/TrendingCounter";
 
 export default function ClaimComment() {
   return (

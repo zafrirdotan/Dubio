@@ -12,7 +12,7 @@ const ClaimDetailsMaker = (props: any) => {
           type="default"
           size="large"
           shape="round"
-          className="custom-button"
+          className=""
         >
           {el}
           <Divider type="vertical" className="divider" /> <LinkOutlined />

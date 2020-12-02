@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./claim-details-container.scss";
 
 import DubioFormCard from "../DubioFormCard/DubioFormCard";

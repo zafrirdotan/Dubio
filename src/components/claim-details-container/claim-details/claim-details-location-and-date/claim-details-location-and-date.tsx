@@ -12,7 +12,7 @@ const ClaimDetailsLocationAndPlace = (props: any) => {
           type="default"
           shape="round"
           size="large"
-          className="custom-button custom-button-location-and-place"
+          className=" custom-button-location-and-place"
         >
           {el.location}
           <Divider type="vertical" className="divider" /> {el.date}

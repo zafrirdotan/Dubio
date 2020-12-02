@@ -2,8 +2,8 @@ import React from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 
 import './claim-summary.scss';
-import ClaimItem from '../../claim-item/claim-item';
-import DubioFormCard from '../../DubioFormCard/DubioFormCard';
+import ClaimItem from '../claim-item/claim-item';
+import DubioFormCard from '../DubioFormCard/DubioFormCard';
 export default function ClaimSummary() {
   return (
     <DubioFormCard

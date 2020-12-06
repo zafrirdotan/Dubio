@@ -3,12 +3,17 @@ import "./claim-details-location-and-date.scss";
 import { Button, Divider } from "antd";
 import { LinkOutlined } from "@ant-design/icons";
 
-const ClaimDetailsLocationAndPlace = (props: any) => {
+interface IClaimDetailsLocationAndPlace {
+  additionalInfo: any;
+}
+const ClaimDetailsLocationAndPlace = ({
+  additionalInfo,
+}: IClaimDetailsLocationAndPlace) => {
   return (
     <>
-      {props.additionalInfo.map((el: any, i: number) => (
+      {additionalInfo.map((el: any, i: number) => (
         <Button
-          key={i}
+          key={`${i}-${el.location}`}
           type="default"
           shape="round"
           size="large"

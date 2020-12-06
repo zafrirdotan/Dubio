@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Children } from "react";
 import "./claim-details.scss";
 
-import { Timeline, Collapse, Button } from "antd";
+import { Timeline, Collapse } from "antd";
 import ClaimHeader from "../../claim-header/claim-header";
 import ClaimDetailsJobTitle from "./claim-details-job-title/claim-details-job-title";
 import ClaimDetailsMaker from "./claim-details-maker/claim-details-maker";
@@ -9,7 +9,7 @@ import ClaimDetailsLocationAndPlace from "./claim-details-location-and-date/clai
 import PlusSign from "../../plus-sign/plus-sign";
 const { Panel } = Collapse;
 
-export default function ClaimDetails() {
+export default function ClaimDetails({id}:any) {
   const claimHeader = React.createElement(ClaimHeader, {
     title: "Donald Trump",
     dates: ["12 February 2020", "20 June 2020"],
@@ -17,54 +17,52 @@ export default function ClaimDetails() {
   });
 
   return (
-    <div className="claim-details">
-      <Collapse>
-        <Panel header={claimHeader} key="1">
-          <Timeline style={{ marginLeft: "20px" }}>
-            {/* JOB TITLE */}
-            <Timeline.Item>
-              <b>Job Title (select one):</b>
-              <br />
-              <div className="claim-buttons-tags-container">
-                <ClaimDetailsJobTitle
-                  jobTitles={["President of the United States", " President"]}
-                />
-                <PlusSign />
-              </div>
-            </Timeline.Item>
+    <Collapse defaultActiveKey={"1"} >
+      <Panel header={claimHeader} key={id}>
+        <Timeline style={{ marginLeft: "20px" }}>
+          {/* JOB TITLE */}
+          <Timeline.Item>
+            <b>Job Title (select one):</b>
+            <br />
+            <div className="claim-buttons-tags-container">
+              <ClaimDetailsJobTitle
+                jobTitles={["President of the United States", " President"]}
+              />
+              <PlusSign />
+            </div>
+          </Timeline.Item>
 
-            {/* CLAIM MAKER */}
-            <Timeline.Item>
-              <b>Claim Maker Info(select one):</b>
-              <br />
-              <div className="claim-buttons-tags-container">
-                <ClaimDetailsMaker
-                  infoLinks={["www.wikipedia.com", "www.cnn.com"]}
-                />
-                <PlusSign />
-              </div>
-            </Timeline.Item>
+          {/* CLAIM MAKER */}
+          <Timeline.Item>
+            <b>Claim Maker Info(select one):</b>
+            <br />
+            <div className="claim-buttons-tags-container">
+              <ClaimDetailsMaker
+                infoLinks={["www.wikipedia.com", "www.cnn.com"]}
+              />
+              <PlusSign />
+            </div>
+          </Timeline.Item>
 
-            {/**LOCATION AND DATE */}
-            <Timeline.Item>
-              <b>Claim Location and Date (multiple selection is possible):</b>
-              <br />
-              <div className="claim-buttons-tags-container">
-                <ClaimDetailsLocationAndPlace
-                  additionalInfo={[
-                    { location: "CNN Intreview", date: "12 February 2020" },
-                    {
-                      location: "Florida Election Rally",
-                      date: "22 March 2020",
-                    },
-                  ]}
-                />
-                <PlusSign />
-              </div>
-            </Timeline.Item>
-          </Timeline>
-        </Panel>
-      </Collapse>
-    </div>
+          {/**LOCATION AND DATE */}
+          <Timeline.Item>
+            <b>Claim Location and Date (multiple selection is possible):</b>
+            <br />
+            <div className="claim-buttons-tags-container">
+              <ClaimDetailsLocationAndPlace
+                additionalInfo={[
+                  { location: "CNN Intreview", date: "12 February 2020" },
+                  {
+                    location: "Florida Election Rally",
+                    date: "22 March 2020",
+                  },
+                ]}
+              />
+              <PlusSign />
+            </div>
+          </Timeline.Item>
+        </Timeline>
+      </Panel>
+    </Collapse>
   );
 }

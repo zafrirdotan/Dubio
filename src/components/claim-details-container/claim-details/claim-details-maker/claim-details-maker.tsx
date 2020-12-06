@@ -8,7 +8,7 @@ const ClaimDetailsMaker = (props: any) => {
     <>
       {props.infoLinks.map((el: string, i: number) => (
         <Button
-          key={i}
+          key={`${i}-${el}`}
           type="default"
           size="large"
           shape="round"

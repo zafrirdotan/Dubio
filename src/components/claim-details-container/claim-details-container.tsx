@@ -9,10 +9,14 @@ export default function ClaimDetailsContainer() {
     <div className="claim-details-container">
       <DubioFormCard
         title="Claim Details: Who? When?"
-        collapsible={true}
         submitButtonText="Add new"
       >
-        <ClaimDetails />
+        <div className="claim-details">
+          
+            <ClaimDetails id="1"/>
+            <ClaimDetails id="2"/>
+            <ClaimDetails id="3"/>
+        </div>
       </DubioFormCard>
     </div>
   );

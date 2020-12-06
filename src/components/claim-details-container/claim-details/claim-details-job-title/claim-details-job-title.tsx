@@ -1,14 +1,13 @@
 import React from "react";
 import "./claim-details-job-title.scss";
 import { Button } from "antd";
-import PlusSign from "../../../plus-sign/plus-sign";
 
-const ClaimDetailsJobTitle = (props: any) => {
+const ClaimDetailsJobTitle = ({jobTitles}: any) => {
   return (
     <>
-      {props.jobTitles.map((el: string, i: number) => (
+      {jobTitles.map((el: string, i: number) => (
         <Button
-          key={i}
+          key={`${i}-${el}`}
           type="default"
           size="large"
           shape="round"

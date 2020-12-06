@@ -6,11 +6,11 @@ import PageHeader from '../../components/PageHeader/PageHeader';
 import { articleList } from '../MockData/articleList';
 import SuspiciousClaim from '../../components/suspicious-claim/suspicious-claim';
 import ClaimDetailsForm from '../../components/claim-details-container/claim-details-container';
-import RelevantSourcesList from './RelevantSourcesList/RelevantSourcesList';
+import RelevantSourcesList from '../../components/relevant-sources/relevant-sources';
 
 export default function FactCheckPage() {
   return (
-    <div className="fact-check-page-container">
+    <div className="page-container fact-check-page-container"> {/* className="page-container" is in app.css */}
       <PageHeader
         bannerName="banner"
         leftImageName="game-console"

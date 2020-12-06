@@ -1,9 +1,9 @@
 import React from "react";
-import "./RelevantSourcesList.scss";
+import "./relevant-sources.scss";
 import { Card, Collapse } from "antd";
-import DubioFormCard from "../../../components/DubioFormCard/DubioFormCard";
-import ClaimHeader from "../../../components/claim-header/claim-header";
-import PlusSign from "../../../components/plus-sign/plus-sign";
+import DubioFormCard from "../DubioFormCard/DubioFormCard";
+import ClaimHeader from "../claim-header/claim-header";
+import PlusSign from "../plus-sign/plus-sign";
 const { Panel } = Collapse;
 
 export default function RelevantSourcesList() {
@@ -31,12 +31,12 @@ export default function RelevantSourcesList() {
   return (
     <DubioFormCard
       title="Relevant sources for fact-checking this claim"
-      collapsible={true}
+      collapsible={false}
       submitButtonText="Add new"
     >
-      <Collapse expandIconPosition="right" className="relevant-source-collapse">
+      <Collapse expandIconPosition="right" className="relevant-source-collapse" defaultActiveKey={['0']}>
         {claimHeaderComponentsArr.map((component: any, i: number) => (
-          <Panel header={component} extra={plusSignComponent} className="relevant-source-panel" key={i}>
+          <Panel header={component} extra={plusSignComponent} className="relevant-source-panel" key={`${i}-${component.title}`} >
             <div className="source-content">
               <span className="source-content-header-guide">Explain why this source is relevant</span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corporis voluptatum enim dolore vitae alias dicta dolorum tempore quam esse atque, cumque voluptas deleniti accusamus nisi libero distinctio. Eos, tenetur.</p>

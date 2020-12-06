@@ -10,7 +10,7 @@ import TrendingCounter from "../TrendingCounter/TrendingCounter";
 import ClaimComment from "../suspicious-claim-comment/suspicious-claim-comment";
 const { Meta } = Card;
 
-export default function SuspiciousClaim({ articleTitle, article }: any) {
+export default function SuspiciousClaim({ article }: any) {
   return (
     <div className="claim-container">
       <DubioCard>

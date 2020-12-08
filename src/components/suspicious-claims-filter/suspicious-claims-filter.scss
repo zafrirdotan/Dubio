@@ -1,0 +1,10 @@
+.suspicious-claims-filter {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .filter-claims-button {
+    height: auto;
+    border-radius: 9px;
+  }
+}

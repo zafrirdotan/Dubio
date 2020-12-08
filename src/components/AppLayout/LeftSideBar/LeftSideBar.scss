@@ -1,8 +1,17 @@
-.side-menu {
-  background: #fff;
-  border-right: 0;
-  height: calc(100vh - 65px);
-}
+
 .avatar-item {
   padding: 25px;
+}
+
+.ant-layout-sider{
+   @media screen and (max-width: 900px){
+     transform: translateX(-80px);
+     min-width: 0 !important;
+     flex: 0 0 0 !important;
+   }
+}
+
+.side-menu-active{
+  transform: translateX(0px);
+  z-index: 199;
 }

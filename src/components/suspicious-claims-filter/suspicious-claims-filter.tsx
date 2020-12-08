@@ -1,10 +1,11 @@
-import { Button } from 'antd';
-import Select from 'antd/lib/select';
 import React, { useState } from 'react';
-import DubioCard from '../../components/DubioCard/DubioCard';
-import DubioSearchInput from '../../components/DubioSearchInput/DubioSearchInput';
-import DubioSelectInput from '../../components/DubioSelectInput/DubioSelectInput';
-const { Option } = Select;
+import './suspicious-claims-filter.scss';
+import { Button } from 'antd';
+import { GlobalOutlined} from '@ant-design/icons';
+import DubioCard from '../DubioCard/DubioCard';
+import DubioSearchInput from '../DubioSearchInput/DubioSearchInput';
+import DubioSelectInput from '../DubioSelectInput/DubioSelectInput';
+
 interface IOption {
   label: string;
   value: string;

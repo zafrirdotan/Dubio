@@ -1,24 +1,29 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { LayoutContext } from "../layout.provider";
 import {
   BookOutlined,
   LaptopOutlined,
   CheckOutlined,
   TableOutlined,
-} from '@ant-design/icons';
-import './LeftSideBar.scss';
-import UserAvatar from '../Header/Avatar/UserAvatar';
-import { Layout, Menu } from 'antd';
+} from "@ant-design/icons";
+import "./LeftSideBar.scss";
+import UserAvatar from "../Header/Avatar/UserAvatar";
+import { Layout, Menu } from "antd";
 
 const { Sider } = Layout;
 
 export default function LeftSideBar() {
+  const { menuActive, toggleMenuActive } = useContext(LayoutContext);
   return (
-    <Sider className="side-menu" collapsed={true}>
+    <Sider
+      collapsed={true}
+      className={`${menuActive ? "side-menu-active" : ""}`}
+    >
       <Menu
         mode="inline"
-        defaultOpenKeys={['sub1']}
-        style={{ height: '100%', borderRight: 0 }}
-        defaultSelectedKeys={['3']}
+        defaultOpenKeys={["sub1"]}
+        style={{ height: "100%", borderRight: 0 }}
+        defaultSelectedKeys={["3"]}
       >
         <div className="avatar-item">
           <UserAvatar />

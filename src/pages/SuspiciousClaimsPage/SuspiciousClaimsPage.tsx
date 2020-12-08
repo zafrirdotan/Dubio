@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PageHeader from '../../components/PageHeader/PageHeader';
-import SuspiciousClaimsFilter from './SuspiciousClaimsFilter';
+import SuspiciousClaimsFilter from '../../components/suspicious-claims-filter/suspicious-claims-filter';
 import SuspiciousClaimsList from './SuspiciousClaimsList/SuspiciousClaimsList';
 import './SuspiciousClaimsPage.scss';
 

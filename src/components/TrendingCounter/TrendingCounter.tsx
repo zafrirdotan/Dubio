@@ -11,7 +11,7 @@ import "./TrendingCounter.scss";
 
 //REDUX
 import { useDispatch } from "react-redux";
-import { toggleHotCount, toggleBookmarkCount } from "../../app/Slices/ArticleSlice";
+import { toggleHotCount, toggleBookmarkCount } from "../../redux/Slices/ArticleSlice";
 
 interface ITrendingCounter {
   isFireOn: boolean;

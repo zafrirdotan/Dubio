@@ -18,7 +18,7 @@ export const httpService = (
             Token: '',
           }
         : undefined,
-      Request: Request,
+      Request: Request || undefined,
     },
   }).then((res) => {
     const persons = res.data;

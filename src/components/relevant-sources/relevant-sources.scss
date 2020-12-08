@@ -1,0 +1,31 @@
+.relevant-source-collapse {
+  background-color: white;
+  border: none;
+
+ 
+  .ant-collapse-content{
+    border-top: none;
+  }
+
+
+  .source-content {
+    margin-left: 45px;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 10px 20px;
+    position: relative;
+
+    .source-content-header-guide {
+      color: #d9d9d9;
+      position: absolute;
+      top: -13px;
+      background-color: white;
+      margin: 0 5px;
+      padding: 0 10px;
+    }
+
+    p{
+        margin-top: 10px;
+    }
+  }
+}

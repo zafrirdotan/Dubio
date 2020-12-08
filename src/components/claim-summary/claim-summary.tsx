@@ -1,9 +1,8 @@
 import React from 'react';
-import DubioCard from '../DubioCard/DubioCard';
 import { PlusOutlined } from '@ant-design/icons';
 
-import './ClaimSummary.scss';
-import Claim from './Claim';
+import './claim-summary.scss';
+import ClaimItem from '../claim-item/claim-item';
 import DubioFormCard from '../DubioFormCard/DubioFormCard';
 export default function ClaimSummary() {
   return (
@@ -14,8 +13,10 @@ export default function ClaimSummary() {
       }
       submitButtonText="Add new"
     >
-      <div className="claim-summary-contact">
-        <Claim text="bubuu" numberOfLikes={1} />
+      <div className="claim-summary-content">
+        <ClaimItem text="bubuu" numberOfLikes={1} />
+        <ClaimItem text="bubuu" numberOfLikes={1} />
+        <ClaimItem text="bubuu" numberOfLikes={1} />
       </div>
     </DubioFormCard>
   );

@@ -1,5 +1,5 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import articleSlice from './Slices/ArticleSlice';
+import articleSlice from '../redux/Slices/ArticleSlice';
 
 const rootReducer = combineReducers({articleSlice});
 

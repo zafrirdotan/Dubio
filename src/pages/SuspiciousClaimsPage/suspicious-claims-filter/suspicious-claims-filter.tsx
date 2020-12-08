@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
+
+//STYLES
 import './suspicious-claims-filter.scss';
 import { Button } from 'antd';
-import DubioCard from '../DubioCard/DubioCard';
-import DubioSearchInput from '../DubioSearchInput/DubioSearchInput';
-import DubioSelectInput from '../DubioSelectInput/DubioSelectInput';
+import Select from 'antd/lib/select';
 
+//COMPONENTS
+import DubioCard from '../../../components/DubioCard/DubioCard';
+import DubioSearchInput from '../../../components/DubioSearchInput/DubioSearchInput';
+import DubioSelectInput from '../../../components/DubioSelectInput/DubioSelectInput';
+
+const { Option } = Select;
 interface IOption {
   label: string;
   value: string;

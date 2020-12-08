@@ -1,34 +1,4 @@
 .claim-list {
   padding: 30px 0;
 }
-.claim-container {
-  padding-bottom: 30px;
-  .img-box {
-    width: 90px;
-    background: #615dfa;
-    border-radius: 8px;
-    height: 55px;
-  }
-  .ant-card-body {
-    width: 100%;
-  }
-  .clime-card {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    .link {
-      color: black;
-    }
-  }
 
-  .comment-container {
-    margin: 10px 0 0 8%;
-  }
-  .comment-contact {
-    display: flex;
-    justify-content: space-between;
-    .comment-text {
-      width: 90%;
-    }
-  }
-}

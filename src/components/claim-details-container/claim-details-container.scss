@@ -1,7 +1,7 @@
-.claim-form {
-  .ant-card-type-inner .ant-card-body {
-    padding: 0 !important;
-  }
+.claim-details-container {
+  // .ant-card-type-inner .ant-card-body {
+  //   padding: 0 !important;
+  // }
   .ant-collapse {
     background-color: none !important;
     border: none !important;
@@ -21,5 +21,6 @@
   }
   .ant-collapse > .ant-collapse-item > .ant-collapse-header {
     background: white;
+    padding-left: 0px;
   }
 }

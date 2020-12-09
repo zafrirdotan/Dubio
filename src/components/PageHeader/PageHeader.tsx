@@ -1,5 +1,5 @@
-import React from 'react';
-import './PageHeader.scss';
+import React from "react";
+import "./PageHeader.scss";
 
 interface IPageHeader {
   bannerName: string;

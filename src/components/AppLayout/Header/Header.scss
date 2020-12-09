@@ -36,8 +36,7 @@
       flex-direction: column;
       z-index: 9;
       padding: 10px;
-      // transform: translateX(210px);
-      // transition: 1s;
+
     }
   }
   .header-menu-active {
@@ -52,10 +51,7 @@
     -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
-  .slide-right {
-    -webkit-animation: slide-right 0.5s cubic-bezier(-0.25, -0.46, -0.45, -0.94) both;
-    animation: slide-right 0.5s cubic-bezier(-0.25, -0.46, -0.45, -0.94) both;
-  }
+
 
   @keyframes slide-left {
     0% {

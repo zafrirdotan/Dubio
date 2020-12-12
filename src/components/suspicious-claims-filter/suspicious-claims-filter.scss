@@ -1,10 +1,25 @@
-.suspicious-claims-filter {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+#card-filter-claims .ant-card-body {
+  @media screen and (max-width: 900px) {
+    padding: 0 0 10px !important;
+  }
 
-  .filter-claims-button {
-    height: auto;
-    border-radius: 9px;
+  .suspicious-claims-filter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    .filter-claims-button {
+      height: auto;
+      border-radius: 9px;
+      padding: 10px;
+      @media screen and (max-width: 900px) {
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 0;
+        padding: 3px 10px;
+      }
+    }
   }
 }
+

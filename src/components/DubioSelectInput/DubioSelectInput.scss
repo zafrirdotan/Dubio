@@ -7,9 +7,10 @@
   margin: 15px;
 
   @media screen and (max-width: 900px) {
-    // display: none;
+    border: none;
+    padding: 0;
   }
-  
+
   label.dubio-input-label {
     color: #908e8e;
     position: absolute;
@@ -19,6 +20,17 @@
     background: white;
     padding: 8px;
     font-size: 0.8rem;
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  .dubio-select-input {
+    @media screen and (max-width: 900px) {
+      border: 1px solid #908e8e;
+    }
+   
   }
   .ant-select-selector {
     border: none !important;

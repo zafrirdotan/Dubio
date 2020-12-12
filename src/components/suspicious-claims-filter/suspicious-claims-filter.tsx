@@ -70,7 +70,7 @@ export default function SuspiciousClaimsFilter() {
     console.log('searchObject:', searchObject);
   };
   return (
-    <DubioCard>
+    <DubioCard id="card-filter-claims">
       <div className="suspicious-claims-filter">
         <DubioSelectInput
           defaultValue="Worldwide"

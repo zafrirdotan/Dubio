@@ -1,5 +1,4 @@
 import Input from 'antd/lib/input';
-import Select from 'antd/lib/select';
 import React from 'react';
 import './DubioSearchInput.scss';
 

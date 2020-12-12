@@ -12,27 +12,16 @@ export default function DubioSelectInput(props: {
   label: string;
   value: string;
 }) {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
-
-  const selectMarkup = (
-    <Select
-      size="large"
-      className="dubio-input"
-      bordered={false}
-      style={{ width: 120 }}
-      {...props}
-    ></Select>
-  );
-
-  return windowWidth < 900 ? (
-    selectMarkup
-  ) : (
+  return (
     <div className="dubio-input-container">
       <label className="dubio-input-label">{props.label}</label>
-      {selectMarkup}
+      <Select
+        size="large"
+        className="dubio-input"
+        bordered={false}
+        style={{ width: 120 }}
+        {...props}
+      ></Select>
     </div>
   );
 }

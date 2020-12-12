@@ -19,8 +19,9 @@ export default function AppHeader() {
       </div>
 
       <Menu
-        mode={menuActive ? 'vertical': 'horizontal'}
-        className={`header-menu ${menuActive? 'header-menu-active': ''}`}
+        // mode='horizontal'
+        // mode={menuActive ? 'vertical': 'horizontal'}
+        className={`header-menu ${menuActive? 'header-menu-active': 'header-menu-inactive'}`}
         style={{ backgroundColor: 'transparent' }}
         theme="dark"
       >

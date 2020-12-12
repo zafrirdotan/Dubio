@@ -3,7 +3,8 @@ import { useDispatch } from "react-redux";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import { getSettings } from "../../redux/Slices/SettingsSlice";
 import { getArticles } from "../../redux/Slices/ArticleSlice";
-import SuspiciousClaimsFilter from "./suspicious-claims-filter/suspicious-claims-filter";
+import SuspiciousClaimsFilter from "../../components/suspicious-claims-filter/suspicious-claims-filter";
+// import SuspiciousClaimsFilter from "./suspicious-claims-filter/suspicious-claims-filter";
 import SuspiciousClaimsList from "./SuspiciousClaimsList/SuspiciousClaimsList";
 
 export default function SuspiciousClaimsPage() {

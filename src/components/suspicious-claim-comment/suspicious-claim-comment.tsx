@@ -5,9 +5,9 @@ import TrendingCounter from "../TrendingCounter/TrendingCounter";
 
 export default function ClaimComment() {
   return (
-    <DubioCard>
-      <div className="comment-container">
-        <div className="comment-contact">
+    <div className="comment-container">
+      <DubioCard>
+        <div className="comment-content">
           <div className="comment-text">
             Comment text... Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -18,15 +18,17 @@ export default function ClaimComment() {
             proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.
           </div>
-          <TrendingCounter
-            isFireOn={true}
-            isBookOn={true}
-            bookCount={10}
-            fireCount={16}
-            id={""}
-          />
+          <div className="comment-trending-counter">
+            <TrendingCounter
+              isFireOn={true}
+              isBookOn={true}
+              bookCount={10}
+              fireCount={16}
+              id={""}
+            />
+          </div>
         </div>
-      </div>
-    </DubioCard>
+      </DubioCard>
+    </div>
   );
 }

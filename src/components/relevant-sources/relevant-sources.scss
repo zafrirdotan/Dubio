@@ -1,31 +1,58 @@
-.relevant-source-collapse {
-  background-color: white;
-  border: none;
-
- 
-  .ant-collapse-content{
-    border-top: none;
+.relevant-sources {
+  @media screen and (max-width: 400px) {
+    .ant-collapse-header,
+    .ant-collapse-content-box {
+      padding: 5px 0 !important;
+    }
   }
 
+  @media screen and (max-width: 900px) {
+    .ant-collapse-item {
+      padding: 15px 0;
+    }
+  }
 
-  .source-content {
-    margin-left: 45px;
-    border: 1px solid #d9d9d9;
-    border-radius: 25px;
-    padding: 10px 20px;
-    position: relative;
+  .relevant-source-collapse {
+    background-color: white;
+    border: none;
 
-    .source-content-header-guide {
-      color: #d9d9d9;
+    .plus-sign-container {
       position: absolute;
-      top: -13px;
-      background-color: white;
-      margin: 0 5px;
-      padding: 0 10px;
+      right: 40px;
+      top: 0px;
+
+      @media screen and (max-width: 900px) {
+        right: 30px;
+      }
     }
 
-    p{
+    .ant-collapse-content {
+      border-top: none;
+    }
+
+    .source-content {
+      margin-left: 45px;
+      border: 1px solid #d9d9d9;
+      border-radius: 25px;
+      padding: 10px 20px;
+      position: relative;
+
+      @media screen and (max-width: 900px) {
+        margin-left: 20px;
+      }
+
+      .source-content-header-guide {
+        color: #d9d9d9;
+        position: absolute;
+        top: -12px;
+        background-color: white;
+        margin: 0 5px;
+        padding: 0 10px;
+      }
+
+      p {
         margin-top: 10px;
+      }
     }
   }
 }

@@ -17,7 +17,7 @@ const ClaimDetailsLocationAndPlace = ({
           type="default"
           shape="round"
           size="large"
-          className=" custom-button-location-and-place"
+          className=" custom-button-location-and-place custom-button-claim-details"
         >
           {el.location}
           <Divider type="vertical" className="divider" /> {el.date}

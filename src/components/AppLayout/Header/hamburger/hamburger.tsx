@@ -4,7 +4,6 @@ import { LayoutContext } from "../../layout.provider";
 
 const Hamburger = () => {
   const { toggleMenuActive, menuActive } = React.useContext(LayoutContext);
-  console.log(menuActive);
   return (
     <div className="hamburger">
       <a

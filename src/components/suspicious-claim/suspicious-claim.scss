@@ -1,20 +1,51 @@
 .claim-container {
-    padding-bottom: 30px;
-    .img-box {
-      width: 90px;
-      background: #615dfa;
-      border-radius: 8px;
-      height: 55px;
+  padding-bottom: 30px;
+
+  .ant-card-body{
+    @media screen and (max-width:900px){
+      padding:10px;
     }
-    .ant-card-body {
-      width: 100%;
-    }
-    .clime-card {
+  }
+
+  .claim-card-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .claim-section {
+      margin: 10px;
       display: flex;
+
+  
+
+      @media screen and (max-width: 900px) {
+        margin: 10px 2px;
+      }
+    }
+
+    .source-and-trending-counter{
+      flex-grow: 1;
       justify-content: space-between;
-      width: 100%;
+    }
+
+    .img-title-description {
+      .img-box {
+        width: 60px;
+        height: 60px;
+        background: #615dfa;
+        border-radius: 8px;
+        height: 55px;
+      }
       .link {
         color: black;
       }
     }
+
+    .source {
+      margin: auto 10px;
+    }
+    .trending-counter {
+      flex-grow: 0;
+    }
   }
+}

@@ -3,7 +3,7 @@ import { articleList } from "../../pages/MockData/articleList";
 
 import { getArticlesAsync, /*getClaimsAsync*/ } from '../../services/APIServices/ArticlesApi';
 import { AppThunk } from '../store';
-import {RootState} from '../rootReducer';
+import { RootState } from '../rootReducer';
 
 interface IArticlesInitialState {
   articlesArr: any;
@@ -52,8 +52,6 @@ const articleSlice = createSlice({
     },
     getArticlesStart: (state) => {
       state.loading = true;
-      console.log('GET ARTICLES START');
-
     },
     getArticlesSuccess: (state, action: any) => {
       state.loading = false;
@@ -89,7 +87,7 @@ export const getArticles = (): AppThunk => async (dispatch) => {
   try {
     dispatch(getArticlesStart());
 
-    const articlesFromAPI:any = await Promise.resolve(getArticlesAsync());
+    const articlesFromAPI: any = await Promise.resolve(getArticlesAsync());
     // console.log(articlesFromAPI);
 
     articlesFromAPI ? dispatch(getArticlesSuccess(articlesFromAPI))

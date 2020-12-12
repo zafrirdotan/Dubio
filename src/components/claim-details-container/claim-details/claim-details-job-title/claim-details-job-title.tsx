@@ -11,7 +11,7 @@ const ClaimDetailsJobTitle = ({jobTitles}: any) => {
           type="default"
           size="large"
           shape="round"
-          className="custom-button"
+          className="custom-button-claim-details"
         >
           {el}
         </Button>

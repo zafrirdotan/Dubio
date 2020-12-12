@@ -1,5 +1,5 @@
 import React from "react";
-import "./claim-details-maker.scss";
+import "./claim-maker.scss";
 import { Button, Divider } from "antd";
 import { LinkOutlined } from "@ant-design/icons";
 
@@ -12,7 +12,7 @@ const ClaimDetailsMaker = (props: any) => {
           type="default"
           size="large"
           shape="round"
-          className=""
+          className="custom-button-claim-details"
         >
           {el}
           <Divider type="vertical" className="divider" /> <LinkOutlined />

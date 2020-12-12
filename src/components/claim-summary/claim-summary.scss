@@ -1,5 +1,17 @@
 .claim-summary-container {
   margin-bottom: 30px;
+
+  @media screen and (max-width: 900px) {
+    .ant-collapse-arrow {
+      top: 35px !important;
+    }
+
+    .ant-card-body,
+    .ant-collapse-content-box {
+      padding: 5px;
+    }
+  }
+
   .claim-summary-content {
     height: 300px;
   }
@@ -8,6 +20,7 @@
 .submit-button-container {
   display: flex;
   justify-content: flex-end;
+
   .submit-button {
     background: #23d2e2;
     border: #23d2e2;

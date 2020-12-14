@@ -26,7 +26,7 @@ export default function ClaimHeader({rate, title, dates}: IClaimHeader) {
       </div>
       <div className="claim-dates-made-container">
         {dates.map((el: any, i: number) => (
-          <div key={`${i}-${title}`} className="claim-date-made">
+          <div key={`${i}-${el}`} className="claim-date-made">
             <LinkOutlined /> <span>{el}</span>
           </div>
         ))}
